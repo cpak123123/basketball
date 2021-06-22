@@ -1,0 +1,35 @@
+<html>
+<h1 style="font-size:30px"> Search in Database </h1>
+<body style="background-color:#CCCCFF">
+<style>
+.hide {
+	display: none;
+}
+.myDIV:hover + .hide {
+	display: block
+	color: blue;
+}
+</style>
+
+<div class="topnav">
+  <div class="search-container">
+	<form action="search_result.php" method="post">
+		<label for="searches">Search Category: </label>
+		<input list="search_opt" name= "searches" id="searches">
+		<datalist id="search_opt">
+	    <option value="Players">use key player_id</option>
+		<option value="Game">use key "winner loser dates" </option>
+		<option value="Series">use key "round_num conference year ser_winner ser_loser"</option>
+		</datalist>	
+		<input type="text" placeholder="Search.." name="search">
+		<button type="submit">Enter</button>
+	</form>
+	
+  </div>
+</div>
+<form action="welcome.html">
+	<button type="submit">Go Back </button>
+</form>
+</body>
+
+</html>

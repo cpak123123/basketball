@@ -1,0 +1,33 @@
+<html>
+<head>
+
+</head>
+<body>
+<div class="center">
+<h2> Update Player </h2>
+<form action="update_players.php" method="post">
+      player_id:  <input type="text" name="player_id"><br></br>
+   <h2> Update a value: </h2>
+     <label for="players">Pick an item:</label>
+	 <select name = "players" id="players">
+	    <option value="position">Position</option>
+		<option value="name">Name</option>
+		<option value="avg_pts">Average points</option>
+		<option value="avg_reb">Average Rebounds</option>
+		<option value="avg_ast">Average Assists</option>
+		<option value="avg_stl">Average Steals</option>
+		<option value="avg_blk">Average Blocks</option>
+	</select>
+	<br></br>
+	   new_value: <input type="text" name="new_value">
+	  
+		
+   <h4> 	
+   <input type="submit">
+</form>
+<form action="welcome.html">
+	<button type="submit">Go Back </button>
+</form>
+</div>
+</body>
+</html>
